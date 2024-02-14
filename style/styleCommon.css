@@ -11,6 +11,7 @@ body {
     width: 100%;
     height: 100%;
     margin: 0px 0px 0px 0px;
+    color: var(--primary-brown);
 }
 
 nav {
@@ -38,4 +39,32 @@ div.entry {
 
 a.entry-link {
     background-image: url("");
+}
+
+.element-list {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.element-list-title {
+    background-color: var(--primary-brown);
+    color: var(--secondary-tan);
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.element-list-body {
+    display: flex;
+    background-color: darkgray;
+    margin-top: 0px;
+}
+
+.element-list-nav-left .element-list-nav-right{
+    height: max-content;
+}
+
+.element-list-elements {
+    display: flex;
+    margin-top: 0px;
 }

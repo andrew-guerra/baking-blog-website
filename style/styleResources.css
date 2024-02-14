@@ -1,20 +1,26 @@
-#book-list {
-    display: flex;
-}
-
-div.book-resource-container {
+.resource-container {
     margin: 1em 1em 1em 1em;
     border: 1px solid var(--primary-brown);
+    height: min-content;
 }
 
-div.book-resource-container h3 {
+.resource-container h3 {
     margin-top: 0px;
     margin-bottom: 0px;
+    color: var(--secondary-tan);;
+    background-color: var(--primary-brown);
+}
+
+.book-resource-container {
+   
+}
+
+.book-resource-container h3 {
+   
 }
 
 .book-link {
-    color: var(--secondary-tan);;
-    background-color: var(--primary-brown);
+    
     text-decoration: none;
     padding-left: 1em;
     padding-right: 1em;
@@ -33,7 +39,7 @@ div.book-resource-container h3 {
 }
 
 .book-details-container {
-
+    background-color: var(--secondary-tan);
 }
 
 .book-author {
@@ -47,4 +53,8 @@ div.book-resource-container h3 {
 
 .book-image {
     width: 50%;
+}
+
+.ingrident-resource-container {
+
 }

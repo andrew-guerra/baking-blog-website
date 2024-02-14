@@ -4,6 +4,8 @@
         <meta charset="utf-8">
         <link rel="stylesheet" href="../style/styleCommon.css">
         <link rel="stylesheet" href="../style/styleResources.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="../js/elementList.js"></script>
     </head>
     <body>
         <nav>
@@ -13,37 +15,80 @@
         </nav>
         <main>
             <h1>Resources I Use</h1>
-            <h2>Books</h2>
-            <div id="book-list">
-                <div class="book-resource-container">
-                    <h3><a href="https://www.amazon.com/Bread-Bakers-Apprentice-Mastering-Extraordinary/dp/1580082688" target="_blank" class="book-link">"The Bread Baker's Apprentice"</a></h3>
-                    <div class="book-info-container">
-                        <div class="book-details-container">
-                            <h4 class="book-author">Peter Reinhart</h4>
-                            <p class="book-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, ex, alias recusandae tempore quaerat fuga quas asperiores repellendus voluptatum dolores quo, modi laborum soluta! Consequuntur possimus ad voluptates quas sequi.</p>
+            
+            <div class="element-list">
+                <h2 class="element-list-title">Books</h2>
+                <div class="element-list-body">
+                    <button class="element-list-nav-left" onclick="transformLeft(this)">&lt;</button>
+                    <div class="element-list-elements">
+                        <div class="resource-container book-resource-container">
+                            <h3><a href="https://www.amazon.com/Bread-Bakers-Apprentice-Mastering-Extraordinary/dp/1580082688" target="_blank" class="book-link">"The Bread Baker's Apprentice"</a></h3>
+                            <div class="book-info-container">
+                                <div class="book-details-container">
+                                    <h4 class="book-author">Peter Reinhart</h4>
+                                    <p class="book-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, ex, alias recusandae tempore quaerat fuga quas asperiores repellendus voluptatum dolores quo, modi laborum soluta! Consequuntur possimus ad voluptates quas sequi.</p>
+                                </div>
+                                <img class="book-image" src="../resources/imgs/bread-bakers-apprentice.jpg" alt="Image of The Bread Baker's Apprentice Cover">
+                            </div>
                         </div>
-                        <img class="book-image" src="../resources/imgs/bread-bakers-apprentice.jpg" alt="Image of The Bread Baker's Apprentice Cover">
+                        <div class="resource-container book-resource-container">
+                            <h3><a href="https://www.amazon.com/Larousse-Book-Bread-Recipes-Make/dp/0714868876" target="_blank" class="book-link">"The Larousse Book of Bread: Recipes to Make at Home"</a></h3>
+                            <div class="book-info-container">
+                                <div class="book-details-container">
+                                    <h4 class="book-author">Eric Kayser</h4>
+                                    <p class="book-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui illum recusandae totam quos tempora obcaecati nam nisi laboriosam ipsam aliquam a possimus commodi consequatur repellendus dolore, autem numquam nihil. Fugiat!</p>
+                                </div>
+                                <img class="book-image" src="../resources/imgs/larousse-book-of-bread.jpg" alt="Image of The Larousse Book of Bread Cover">
+                            </div>
+                        </div>
+                        <div class="resource-container book-resource-container">
+                            <h3><a href="https://www.amazon.com/Paul-Hollywood-100-Great-Breads/dp/1788402146" target="_blank" class="book-link">"100 Great Breads"</a></h3>
+                            <div class="book-info-container">
+                                <div class="book-details-container">
+                                    <h4 class="book-author">Paul Hollywood</h4>
+                                    <p class="book-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quis maxime aut, non voluptates quasi, quisquam id repellendus atque optio porro numquam, labore autem perspiciatis! Corporis quasi officia nemo animi!</p>
+                                </div>
+                                <img class="book-image" src="../resources/imgs/100-great-breads.jpg" alt="Image of 100 Great Breads Cover">
+                            </div>
+                        </div>
+                        <div class="resource-container book-resource-container">
+                            <h3><a href="https://www.amazon.com/Paul-Hollywood-100-Great-Breads/dp/1788402146" target="_blank" class="book-link">"100 Great Breads"</a></h3>
+                            <div class="book-info-container">
+                                <div class="book-details-container">
+                                    <h4 class="book-author">Paul Hollywood</h4>
+                                    <p class="book-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quis maxime aut, non voluptates quasi, quisquam id repellendus atque optio porro numquam, labore autem perspiciatis! Corporis quasi officia nemo animi!</p>
+                                </div>
+                                <img class="book-image" src="../resources/imgs/100-great-breads.jpg" alt="Image of 100 Great Breads Cover">
+                            </div>
+                        </div>
                     </div>
+                    <button class="element-list-nav-right" onclick="transformRight(this)">&gt;</button>
                 </div>
-                <div class="book-resource-container">
-                    <h3><a href="https://www.amazon.com/Larousse-Book-Bread-Recipes-Make/dp/0714868876" target="_blank" class="book-link">"The Larousse Book of Bread: Recipes to Make at Home"</a></h3>
-                    <div class="book-info-container">
-                        <div class="book-details-container">
-                            <h4 class="book-author">Eric Kayser</h4>
-                            <p class="book-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui illum recusandae totam quos tempora obcaecati nam nisi laboriosam ipsam aliquam a possimus commodi consequatur repellendus dolore, autem numquam nihil. Fugiat!</p>
+            </div>
+
+            <div class="element-list">
+                <h2 class="element-list-title">Ingridents</h2>
+                <div class="element-list-body">
+                    <button class="element-list-nav-left" onclick="transformLeft(this)">&lt;</button>
+                    <div class="element-list-elements">
+                        <div class="resource-container ingrident-resource-container">
+                            <h3>Bob's Red Mill Bread Flour</h3>
+                            <p>Info Text</p>
                         </div>
-                        <img class="book-image" src="../resources/imgs/larousse-book-of-bread.jpg" alt="Image of The Larousse Book of Bread Cover">
-                    </div>
-                </div>
-                <div class="book-resource-container">
-                    <h3><a href="https://www.amazon.com/Paul-Hollywood-100-Great-Breads/dp/1788402146" target="_blank" class="book-link">"100 Great Breads"</a></h3>
-                    <div class="book-info-container">
-                        <div class="book-details-container">
-                            <h4 class="book-author">Paul Hollywood</h4>
-                            <p class="book-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quis maxime aut, non voluptates quasi, quisquam id repellendus atque optio porro numquam, labore autem perspiciatis! Corporis quasi officia nemo animi!</p>
+                        <div class="resource-container ingrident-resource-container">
+                            <h3>Bob's Red Mill All-Purpose Flour</h3>
+                            <p>Info Text</p>
                         </div>
-                        <img class="book-image" src="../resources/imgs/100-great-breads.jpg" alt="Image of 100 Great Breads Cover">
+                        <div class="resource-container ingrident-resource-container">
+                            <h3>Red Star Active Dry Yeast</h3>
+                            <p>Info Text</p>
+                        </div>
+                        <div class="resource-container ingrident-resource-container">
+                            <h3>Red Star Instant Yeast</h3>
+                            <p>Info Text</p>
+                        </div>
                     </div>
+                    <button class="element-list-nav-right" onclick="transformRight(this)">&gt;</button>
                 </div>
             </div>
             
