@@ -42,8 +42,7 @@ a.entry-link {
 }
 
 .element-list {
-    margin-left: 1em;
-    margin-right: 1em;
+    margin: 1em 1em 1em 1em;
 }
 
 .element-list-title {

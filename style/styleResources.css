@@ -7,7 +7,7 @@
 .resource-container h3 {
     margin-top: 0px;
     margin-bottom: 0px;
-    color: var(--secondary-tan);;
+    color: var(--secondary-tan);
     background-color: var(--primary-brown);
 }
 
@@ -19,8 +19,8 @@
    
 }
 
-.book-link {
-    
+.book-link {    
+    color: var(--secondary-tan);
     text-decoration: none;
     padding-left: 1em;
     padding-right: 1em;
@@ -55,6 +55,6 @@
     width: 50%;
 }
 
-.ingrident-resource-container {
+.ingredient-resource-container {
 
 }
